@@ -12,9 +12,9 @@ def read_excel(excel_name, sheetname):
     table = file.sheet_by_name(sheetname)
     rows = table.nrows          # 行数
     table_data = []
-    # 将table中每行数据插入列表，并去掉第一行（即标题行）以及第三列为N的行
+    # 将table中每行数据插入列表，并去掉第一行（即标题行）以及第三列为N的行 以及空行
     for i in range(rows):
-        if i != 0 and table.cell(i, 2).value != 'N':
+        if i != 0 and table.cell(i, 2).value != 'N' and table.cell(i, 0).value != '':
             table_data.append(table.row_values(i))
 
     return table_data

@@ -45,7 +45,16 @@ if __name__ == '__main__':
     username = find_element(driver, "xpath", "//*[@id='app']/div/div/div/div/div[3]/form/div[1]/div/div/input")
     password = find_elements(driver, "xpath", "//*[@id='app']/div/div/div/div/div[3]/form/div[2]/div/div/input")
 
-    loc = ("xpath", "//*[@id='app']/div/div/div/div/div[3]/form/div[1]/div/div/input")
-    send_keys(driver, loc, '11111')
+    loc_username = ("xpath", "//*[@id='app']/div/div/div/div/div[3]/form/div[1]/div/div/input")
+    send_keys(driver, loc_username, '15221739591')
+
+    loc_password = ("xpath", "//*[@id='app']/div/div/div/div/div[3]/form/div[2]/div/div/input")
+    send_keys(driver, loc_password, '739591')
+
+    loc_button = ("class", "")
+
+
+
+
 
     driver.quit()

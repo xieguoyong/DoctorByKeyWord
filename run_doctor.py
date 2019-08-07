@@ -9,6 +9,7 @@ def add_case(case_name="testcase", rule="test_*.py"):
     case_path = os.path.join(cur_path, case_name)
     if not os.path.exists(case_path):os.mkdir(case_path)
     discover = unittest.defaultTestLoader.discover(case_path, pattern=rule, top_level_dir=None)
+    print(discover)
     return discover
 
 

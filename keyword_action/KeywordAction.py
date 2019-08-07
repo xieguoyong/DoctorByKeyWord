@@ -1,5 +1,6 @@
 from selenium import webdriver
 from public import ElementLocate
+import time
 
 
 class Action:
@@ -23,19 +24,21 @@ class Action:
 
     # 输入框输入方法
     def input(self, loc, value):
+        print("value:", value)
         ElementLocate.send_keys(self.driver, loc, value)
 
     # 按钮点击方法
     def click(self, loc):
-        pass
+        ElementLocate.find_element(self.driver, *loc).click()
 
     # 断言校验方法
-    def verify(self, value):
-        pass
+    def verify(self, loc):
+        assert loc.text == '技术测试-谢'
 
     # 关闭浏览器方法
     def close_browser(self):
-        pass
+        time.sleep(3)
+        self.driver.quit()
 
     # 点击元素方法
     def click_element(self, loc):
