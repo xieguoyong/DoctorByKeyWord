@@ -46,9 +46,8 @@ class TestMain(unittest.TestCase):
                     loc = HandData.get_element_loc(step[4])
                     self.action.click(loc)
                 elif step[3] == 'verify':
-                    pass
-                    # loc = HandData.get_element_loc(step[4])
-                    # self.action.verify(loc)
+                    loc = HandData.get_element_loc(Verify_Element)
+                    self.action.verify(loc, ErrMsg)
                 elif step[3] == 'close_browser':
                     self.action.close_browser()
 

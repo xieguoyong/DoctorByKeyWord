@@ -49,9 +49,16 @@ if __name__ == '__main__':
     send_keys(driver, loc_username, '15221739591')
 
     loc_password = ("xpath", "//*[@id='app']/div/div/div/div/div[3]/form/div[2]/div/div/input")
-    send_keys(driver, loc_password, '739591')
+    send_keys(driver, loc_password, '111111')
 
-    loc_button = ("class", "")
+    loc_button = ("xpath", "//*[@id='app']/div/div/div/div/div[3]/form/div[4]/div/button")
+    element = find_element(driver, *loc_button).click()
+    time.sleep(5)
+
+    tips = ("xpath", "/html/body/div[3]")
+    element_tip = find_element(driver, *tips)
+    tip_msg = element_tip.text
+    print(tip_msg)
 
 
 
