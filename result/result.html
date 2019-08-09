@@ -362,9 +362,9 @@ function hide_img(obj){
 </div>
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>开始时间:</strong> 2019-08-08 18:03:27</p>
-<p class='attribute'><strong>耗时:</strong> 0:01:40.205241</p>
-<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>4 <span class="tj errorCase">Error</span>1</p>
+<p class='attribute'><strong>开始时间:</strong> 2019-08-09 11:02:24</p>
+<p class='attribute'><strong>耗时:</strong> 0:01:14.286453</p>
+<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>5</p>
 
 <p class='description'>用例执行情况</p>
 </div>
@@ -397,12 +397,12 @@ function hide_img(obj){
     <th>错误截图</th>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>test_login.TestMain</td>
     <td>5</td>
-    <td>4</td>
+    <td>5</td>
     <td>0</td>
-    <td>1</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c1',5)">详情</a></td>
     <td>&nbsp;</td>
 </tr>
@@ -500,40 +500,27 @@ input_list[index]: 739591
     <td>无截图</td>
 </tr>
 
-<tr id='ft1.4' class='none'>
+<tr id='pt1.4' class='hiddenRow'>
     <td ><div class='testcase'>test_Login_case0004_错误的密码验证</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <span class='status errorCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
-        错误</a></span>
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        通过</a></span>
 
-    <div id='div_ft1.4' class="popup_window">
+    <div id='div_pt1.4' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.4: [15221739591, 12345678]
+pt1.4: [15221739591, 12345678]
 value: 15221739591
 input_list[index]: 15221739591
 value: 12345678
 input_list[index]: 12345678
-Traceback (most recent call last):
-  File "E:\PycharmProjects\DoctorByKeyWord\venv\lib\site-packages\parameterized\parameterized.py", line 518, in standalone_func
-    return func(*(a + p.args), **p.kwargs)
-  File "E:\PycharmProjects\DoctorByKeyWord\testcase\test_login.py", line 50, in test_main
-    self.action.verify(loc, ErrMsg)
-  File "E:\PycharmProjects\DoctorByKeyWord\keyword_action\KeywordAction.py", line 36, in verify
-    element = ElementLocate.find_element(self.driver, *loc)
-  File "E:\PycharmProjects\DoctorByKeyWord\public\ElementLocate.py", line 8, in find_element
-    element = WebDriverWait(driver, 30).until(lambda driver: driver.find_element(*loc))
-  File "E:\PycharmProjects\DoctorByKeyWord\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
-    raise TimeoutException(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: 
-
 
 
         </pre>
@@ -578,16 +565,16 @@ input_list[index]: 739591
 <tr id='total_row'>
     <th>统计</th>
     <th>5</th>
-    <th>4</th>
+    <th>5</th>
     <th>0</th>
-    <th>1</th>
+    <th>0</th>
     <th>&nbsp;</th>
     <th>&nbsp;</th>
 </tr>
 </table>
 <script>
     showCase(1);
-    drawCircle(4, 0, 1);
+    drawCircle(5, 0, 0);
 </script>
 
 <div id='ending'>&nbsp;</div>

@@ -32,10 +32,15 @@ class Action:
         ElementLocate.find_element(self.driver, *loc).click()
 
     # 断言校验方法
-    def verify(self, loc, value):
-        element = ElementLocate.find_element(self.driver, *loc)
-        # assert element.text == value
-        assert element
+    def verify(self, loc, verify_type, value):
+        if verify_type == 'type1':
+            # 根据获取提示信息来断言
+            element = ElementLocate.find_element(self.driver, *loc)
+            assert element.text == value
+        elif verify_type == 'type2':
+            # 根据元素是否存在来断言
+            element = ElementLocate.find_element(self.driver, *loc)
+            assert element
 
     # 关闭浏览器方法
     def close_browser(self):

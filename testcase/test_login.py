@@ -26,7 +26,7 @@ class TestMain(unittest.TestCase):
 
     # 参数化数据，将读取的用例参数化；testcase_func_name参数化用例名称
     @parameterized.expand(case_all, testcase_func_name=custom_name_func)
-    def test_main(self, TCID, CaseId, Runmode, Summary, Input, Verify_Element, ErrMsg, Result):
+    def test_main(self, TCID, CaseId, Runmode, Summary, Input, Verify_Element, Verify_Type, ErrMsg, Result):
         input_list = ast.literal_eval(Input)       # 将读取到的Input1转化为list
         print(input_list)
         index = 0
@@ -47,7 +47,7 @@ class TestMain(unittest.TestCase):
                     self.action.click(loc)
                 elif step[3] == 'verify':
                     loc = HandData.get_element_loc(Verify_Element)
-                    self.action.verify(loc, ErrMsg)
+                    self.action.verify(loc, Verify_Type, ErrMsg)
                 elif step[3] == 'close_browser':
                     self.action.close_browser()
 

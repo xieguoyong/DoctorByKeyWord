@@ -1,6 +1,6 @@
 import os
 import unittest
-from public import HTMLTestRunner
+from public import HTMLTestRunner, send_email
 
 cur_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -28,6 +28,6 @@ if __name__ == '__main__':
     all_case = add_case()
     # 运行用例
     run_case(all_case)
-    # send = send_email.sendemail()
-    # # 发送邮件
-    # send.send_mail()
+    send = send_email.sendemail()
+    # 发送邮件
+    send.send_mail()
