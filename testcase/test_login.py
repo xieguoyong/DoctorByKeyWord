@@ -45,6 +45,9 @@ class TestMain(unittest.TestCase):
                 elif step[3] == 'click':
                     loc = HandData.get_element_loc(step[4])
                     self.action.click(loc)
+                elif step[3] == 'click_element':
+                    loc = HandData.get_element_loc(step[4])
+                    self.action.click_element(loc)
                 elif step[3] == 'verify':
                     loc = HandData.get_element_loc(Verify_Element)
                     self.action.verify(loc, Verify_Type, ErrMsg)

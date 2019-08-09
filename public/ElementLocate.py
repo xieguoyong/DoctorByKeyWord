@@ -49,19 +49,36 @@ if __name__ == '__main__':
     send_keys(driver, loc_username, '15221739591')
 
     loc_password = ("xpath", "//*[@id='app']/div/div/div/div/div[3]/form/div[2]/div/div/input")
-    send_keys(driver, loc_password, '111111')
+    send_keys(driver, loc_password, '739591')
 
     loc_button = ("xpath", "//*[@id='app']/div/div/div/div/div[3]/form/div[4]/div/button")
     element = find_element(driver, *loc_button).click()
     time.sleep(5)
 
-    tips = ("xpath", "/html/body/div[3]")
-    element_tip = find_element(driver, *tips)
-    tip_msg = element_tip.text
-    print(tip_msg)
+    # tips = ("xpath", "/html/body/div[3]")
+    # element_tip = find_element(driver, *tips)
+    # tip_msg = element_tip.text
+    # print(tip_msg)
 
-
-
+    loc_tab = ("xpath", "//*[@id='app']/div/div/div[2]/div[1]/div[1]/div/div/div/div/ul/li[6]")
+    find_element(driver, *loc_tab).click()
+    begin_time = ("xpath", "//*[@id='Readmehome']/div/div[2]/div/div/div/div/div/div/div[1]/div[1]/div[4]/div[1]/div/div[1]/div/input")
+    # send_keys(driver, begin_time, '111')
+    find_element(driver, *begin_time).click()
+    time.sleep(2)
+    # begin_time_hour = ("xpath", "//*[@id='Readmehome']/div/div[2]/div/div/div/div/div/div/div[1]/div[1]/div[4]/div[1]/div/div[2]/div/div/div/div/div/div[1]/ul/li[18]")
+    begin_time_hour = ("xpath", "//*[@id='Readmehome']/div/div[2]/div/div/div/div/div/div/div[1]/div[1]/div[4]/div[1]/div/div[2]/div/div/div/div/div/div[1]/ul/li[16]")
+    begin_time_mini = ("xpath", "//*[@id='Readmehome']/div/div[2]/div/div/div/div/div/div/div[1]/div[1]/div[4]/div[1]/div/div[2]/div/div/div/div/div/div[2]/ul/li[4]")
+    find_element(driver, *begin_time_hour).click()
+    find_element(driver, *begin_time_mini).click()
+    time.sleep(2)
+    end_time = ("xpath", "//*[@id='Readmehome']/div/div[2]/div/div/div/div/div/div/div[1]/div[1]/div[4]/div[3]/div/div[1]/div/input")
+    try:
+        find_element(driver, *end_time).click()
+        find_element(driver, *end_time).click()
+        time.sleep(10)
+    except NoSuchElementException:
+        print("找不到元素")
 
 
     driver.quit()

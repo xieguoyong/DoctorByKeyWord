@@ -42,12 +42,14 @@ class Action:
             element = ElementLocate.find_element(self.driver, *loc)
             assert element
 
+    # 点击元素方法
+    def click_element(self, loc):
+        ElementLocate.find_element(self.driver, *loc).click()
+        time.sleep(2)
+
     # 关闭浏览器方法
     def close_browser(self):
         time.sleep(3)
         self.driver.quit()
 
-    # 点击元素方法
-    def click_element(self, loc):
-        pass
 
