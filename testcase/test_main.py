@@ -30,7 +30,7 @@ class TestMain(unittest.TestCase):
 
     # 参数化数据，将读取的用例参数化；testcase_func_name参数化用例名称
     @parameterized.expand(case_all, testcase_func_name=custom_name_func)
-    def test_main(self, TCID, CaseId, Runmode, Summary, Input, Verify_Element, Verify_Type, ErrMsg, Result):
+    def test_main(self, TCID, CaseId, Runmode, Summary, Input, Verify_Element, Verify_Type, ErrMsg):
         try:
             case_name = TCID + CaseId
             self.logger.info("开始用例<%s>的测试..." % case_name)
