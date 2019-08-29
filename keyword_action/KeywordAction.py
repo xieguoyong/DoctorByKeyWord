@@ -1,5 +1,5 @@
 from selenium import webdriver
-from public import ElementLocate
+from public import ElementLocate, log
 import time
 
 
@@ -24,7 +24,6 @@ class Action:
 
     # 输入框输入方法
     def input(self, loc, value):
-        print("value:", value)
         ElementLocate.send_keys(self.driver, loc, value)
 
     # 按钮点击方法

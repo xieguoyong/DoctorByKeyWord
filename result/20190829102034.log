@@ -1,0 +1,46 @@
+2019-08-29 10:20:34,606 - root - INFO - 用例列表case_all: [['Login', 'case0001', 'Y', '用户名为空的验证', "['',739591]", 'login_verify001', 'type1', '用户名不能为空', 'PASS'], ['Login', 'case0002', 'Y', '密码为空的验证', "[15221739591,'']", 'login_verify002', 'type1', '密码不能为空', 'SKIP'], ['Login', 'case0003', 'Y', '错误的用户名验证', '[15221739456,739591]', 'login_verify003', 'type2', '帐号或密码错误', 'SKIP'], ['Login', 'case0004', 'Y', '错误的密码验证', '[15221739591,12345678]', 'login_verify004', 'type2', '帐号或密码错误', 'SKIP'], ['Login', 'case0005', 'Y', '正确的用户名、密码验证', '[15221739591,739591]', 'login_verify005', 'type1', '技术测试-谢', 'SKIP'], ['Scheduling_dr', 'case0006', 'Y', '医生添加排期', '[15221739591,739591]', '', '', '', '']]
+2019-08-29 10:20:34,699 - root - INFO - 测试步骤test_steps: [['Login', 'TS001', '打开浏览器', 'open_browser', 'chrome', ''], ['Login', 'TS002', '跳转到链接url', 'navigate', 'https://uat-doctor.dr-elephant.net/login', ''], ['Login', 'TS003', '输入用户名', 'input', 'login_001', ''], ['Login', 'TS004', '输入名密码', 'input', 'login_002', ''], ['Login', 'TS005', '点击“登录”按钮', 'click', 'login_003', ''], ['Login', 'TS006', '进行登录校验', 'verify', '', ''], ['Login', 'TS007', '关闭浏览器', 'close_browser', '', ''], ['Scheduling_dr', 'TS001', '打开浏览器', 'open_browser', 'chrome', ''], ['Scheduling_dr', 'TS002', '跳转到链接url', 'navigate', 'https://uat-doctor.dr-elephant.net/login', ''], ['Scheduling_dr', 'TS003', '输入用户名', 'input', 'login_001', ''], ['Scheduling_dr', 'TS004', '输入名密码', 'input', 'login_002', ''], ['Scheduling_dr', 'TS005', '点击“登录”按钮', 'click', 'login_003', ''], ['Scheduling_dr', 'TS006', '切换至我的排期菜单', 'click_element', 'Scheduling_dr001', ''], ['Scheduling_dr', 'TS007', '点击排期开始时间输入框', 'click_element', 'Scheduling_dr002', ''], ['Scheduling_dr', 'TS008', '点击选择排期开始时间的时钟', 'click_element', 'Scheduling_dr003', ''], ['Scheduling_dr', 'TS009', '点击选择排期开始时间的分钟', 'click_element', 'Scheduling_dr004', ''], ['Scheduling_dr', 'TS010', '点击排期结束时间输入框', 'click_element', 'Scheduling_dr005', '第一次点击相当于点击空白处，隐藏掉开始时间下拉菜单'], ['Scheduling_dr', 'TS011', '再次点击排期结束时间输入框', 'click_element', 'Scheduling_dr005', ''], ['Scheduling_dr', 'TS012', '点击选择排期结束时间的时钟', 'click_element', 'Scheduling_dr006', ''], ['Scheduling_dr', 'TS013', '点击选择排期结束时间的分钟', 'click_element', 'Scheduling_dr007', ''], ['Scheduling_dr', 'TS014', '选择服务类型', 'click_element', 'Scheduling_dr008', '第一次点击相当于点击空白处，隐藏掉结束时间下拉菜单'], ['Scheduling_dr', 'TS015', '选择服务类型', 'click_element', 'Scheduling_dr008', ''], ['Scheduling_dr', 'TS016', '点击“添加排期”按钮', 'click', 'Scheduling_dr009', ''], ['Scheduling_dr', 'TS017', '排期成功校验', 'verify', '', ''], ['Scheduling_dr', 'TS018', '关闭浏览器', 'close_browser', '', ''], ['MailFiltering', 'TS001', '打开浏览器', 'open_browser', 'chrome', ''], ['MailFiltering', 'TS002', '跳转到链接url', 'navigate', 'http://mail.126.com', ''], ['MailFiltering', 'TS003', '输入用户名', 'input', 'login_001', ''], ['MailFiltering', 'TS004', '输入名密码', 'input', 'login_002', ''], ['MailFiltering', 'TS005', '点击“登录”按钮', 'click', 'login_003', ''], ['MailFiltering', 'TS006', '进行登录校验', 'verify', 'login_004', 'login_005'], ['MailFiltering', 'TS007', '点击“收信”标签', 'click', 'rec_006', ''], ['MailFiltering', 'TS008', '单击筛选邮件下拉菜单', 'click_element', 'rec_007', ''], ['MailFiltering', 'TS009', '选择筛选类型', 'click_element', 'rec_008', ''], ['MailFiltering', 'TS010', '关闭浏览器', 'close_browser', '', '']]
+2019-08-29 10:20:34,701 - root - INFO - 测试开始...
+2019-08-29 10:20:34,703 - root - INFO - 开始用例<Logincase0001>的测试...
+2019-08-29 10:20:34,705 - root - INFO - 输入信息列表input_list: ['', 739591]
+2019-08-29 10:20:45,089 - root - INFO - input_list[index]: 
+2019-08-29 10:20:45,592 - root - INFO - input_list[index]: 739591
+2019-08-29 10:20:51,399 - root - INFO - 开始用例<Logincase0002>的测试...
+2019-08-29 10:20:51,401 - root - INFO - 输入信息列表input_list: [15221739591, '']
+2019-08-29 10:21:14,149 - root - INFO - input_list[index]: 15221739591
+2019-08-29 10:21:14,302 - root - INFO - input_list[index]: 
+2019-08-29 10:21:20,236 - root - INFO - 开始用例<Logincase0003>的测试...
+2019-08-29 10:21:20,237 - root - INFO - 输入信息列表input_list: [15221739456, 739591]
+2019-08-29 10:21:33,065 - root - INFO - input_list[index]: 15221739456
+2019-08-29 10:21:33,446 - root - INFO - input_list[index]: 739591
+2019-08-29 10:21:39,357 - root - INFO - 开始用例<Logincase0004>的测试...
+2019-08-29 10:21:39,361 - root - INFO - 输入信息列表input_list: [15221739591, 12345678]
+2019-08-29 10:21:53,843 - root - INFO - input_list[index]: 15221739591
+2019-08-29 10:21:54,390 - root - INFO - input_list[index]: 12345678
+2019-08-29 10:22:00,289 - root - INFO - 开始用例<Logincase0005>的测试...
+2019-08-29 10:22:00,291 - root - INFO - 输入信息列表input_list: [15221739591, 739591]
+2019-08-29 10:22:08,773 - root - INFO - input_list[index]: 15221739591
+2019-08-29 10:22:09,161 - root - INFO - input_list[index]: 739591
+2019-08-29 10:22:16,205 - root - INFO - 开始用例<Scheduling_drcase0006>的测试...
+2019-08-29 10:22:16,207 - root - INFO - 输入信息列表input_list: [15221739591, 739591]
+2019-08-29 10:22:26,715 - root - INFO - input_list[index]: 15221739591
+2019-08-29 10:22:27,382 - root - INFO - input_list[index]: 739591
+2019-08-29 10:22:33,484 - root - ERROR - Traceback (most recent call last):
+  File "E:\PycharmProjects\DoctorByKeyWord\testcase\test_main.py", line 57, in test_main
+    self.action.click_element(loc)
+  File "E:\PycharmProjects\DoctorByKeyWord\keyword_action\KeywordAction.py", line 46, in click_element
+    ElementLocate.find_element(self.driver, *loc).click()
+  File "E:\PycharmProjects\DoctorByKeyWord\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "E:\PycharmProjects\DoctorByKeyWord\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "E:\PycharmProjects\DoctorByKeyWord\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\PycharmProjects\DoctorByKeyWord\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17763 x86_64)
+
+
+2019-08-29 10:22:33,538 - root - INFO - 测试结束
